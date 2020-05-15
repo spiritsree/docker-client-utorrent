@@ -4,7 +4,7 @@
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/spiritsree/docker-client-utorrent)](https://hub.docker.com/r/spiritsree/docker-client-utorrent)
 [![Docker Pulls](https://img.shields.io/docker/pulls/spiritsree/docker-client-utorrent)](https://hub.docker.com/r/spiritsree/docker-client-utorrent/tags)
 [![Docker Stars](https://img.shields.io/docker/stars/spiritsree/docker-client-utorrent)](https://hub.docker.com/r/spiritsree/docker-client-utorrent)
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/spiritsree/docker-client-utorrent?sort=semver)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/spiritsree/docker-client-utorrent?sort=semver)](https://hub.docker.com/r/spiritsree/docker-client-utorrent)
 [![License](https://img.shields.io/github/license/spiritsree/docker-client-utorrent)](https://github.com/spiritsree/docker-client-utorrent/blob/master/LICENSE.md)
 
 A configurable uTorrent docker client based out of Ubuntu image
