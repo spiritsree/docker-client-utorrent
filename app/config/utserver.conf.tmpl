@@ -1,0 +1,49 @@
+bind_ip: {{ default .Env.UTORRENT_BIND_IP "0.0.0.0" }}
+ut_webui_port: {{ default .Env.UTORRENT_UT_WEBUI_PORT "8080" }}
+token_auth_enable: {{ lower (default .Env.UTORRENT_TOKEN_AUTH_ENABLE "false") }}
+dir_active: {{ default .Env.UTORRENT_INCOMPLETE_DIR "/data/incomplete" }}
+dir_completed: {{ default .Env.UTORRENT_DOWNLOAD_DIR "/data/completed" }}
+dir_download:
+dir_torrent_files: {{ default .Env.UTORRENT_HOME "/data/utorrent-home" }}/torrents
+dir_temp_files: {{ default .Env.UTORRENT_HOME "/data/utorrent-home" }}/temp
+dir_autoload: {{ default .Env.UTORRENT_WATCH_DIR "/data/watch" }}
+dir_autoload_delete: {{ lower (default .Env.UTORRENT_DIR_AUTOLOAD_DELETE "false") }}
+dir_request: ""
+upnp: {{ lower (default .Env.UTORRENT_UPNP "false") }}
+natpmp: {{ lower (default .Env.UTORRENT_NATPMP "false") }}
+lsd: {{ lower (default .Env.UTORRENT_LSD "true") }}
+dht: {{ lower (default .Env.UTORRENT_DHT "true") }}
+pex: {{ lower (default .Env.UTORRENT_PEX "true") }}
+rate_limit_local_peers: {{ lower (default .Env.UTORRENT_RATE_LIMIT_LOCAL_PEERS "false") }}
+dir_root: ""
+disk_cache_max_size: {{ default .Env.UTORRENT_DISK_CACHE_MAX_SIZE "0" }}
+write_coalesce_max_size: {{ default .Env.UTORRENT_WRITE_COALESCE_MAX_SIZE "0" }}
+progressive_piece_span: {{ default .Env.UTORRENT_PROGRESSIVE_PIECE_SPAN "0" }}
+preferred_interface:
+admin_name: "{{ default .Env.UTORRENT_USERNAME "username" }}"
+admin_password: "{{ default .Env.UTORRENT_PASSWORD "password" }}"
+localhost_authentication: {{ lower (default .Env.UTORRENT_LOCALHOST_AUTHENTICATION "true") }}
+logmask: {{ default .Env.UTORRENT_LOGMASK "0" }}
+ut_webui_dir: {{ default .Env.UTORRENT_WEB_HOME "/utorrent/webui/default" }}
+finish_cmd: {{ default .Env.UTORRENT_FINISH_CMD "" }}
+uconnect_enable: {{ lower (default .Env.UTORRENT_UCONNECT_ENABLE "false") }}
+uconnect_username: {{ default .Env.UTORRENT_UCONNECT_USERNAME "" }}
+uconnect_password: {{ default .Env.UTORRENT_UCONNECT_PASSWORD "" }}
+low_cpu: {{ lower (default .Env.UTORRENT_LOW_CPU "false") }}
+sequential_download: {{ lower (default .Env.UTORRENT_SEQUENTIAL_DOWNLOAD "false") }}
+compact_allocation: {{ lower (default .Env.UTORRENT_COMPACT_ALLOCATION "false") }}
+prealloc_space: {{ lower (default .Env.UTORRENT_PREALLOC_SPACE "false") }}
+minimize_kernel_caching: {{ lower (default .Env.UTORRENT_MINIMIZE_KERNEL_CACHING "false") }}
+all_writes_sync: {{ lower (default .Env.UTORRENT_ALL_WRITES_SYNC "false") }}
+randomize_bind_port: {{ lower (default .Env.UTORRENT_RANDOMIZE_BIND_PORT "false") }}
+token_auth_filter: {{ lower (default .Env.UTORRENT_TOKEN_AUTH_FILTER "all") }}
+encrypt_buffer_size: {{ default .Env.UTORRENT_ENCRYPT_BUFFER_SIZE "102400" }}
+bind_port: {{ default .Env.UTORRENT_BIND_PORT "6881" }}
+max_ul_rate: {{ default .Env.UTORRENT_MAX_UL_RATE "-1" }}
+max_ul_rate_seed: {{ default .Env.UTORRENT_MAX_UL_RATE_SEED "-1" }}
+conns_per_torrent: {{ default .Env.UTORRENT_CONNS_PER_TORRENT "50" }}
+max_total_connections: {{ default .Env.UTORRENT_MAX_TOTAL_CONNECTIONS "200" }}
+auto_bandwidth_management: {{ lower (default .Env.UTORRENT_AUTO_BANDWIDTH_MANAGEMENT "true") }}
+max_dl_rate: {{ default .Env.UTORRENT_MAX_DL_RATE "-1" }}
+seed_ratio: {{ default .Env.UTORRENT_SEED_RATIO "0" }}
+seed_time: {{ default .Env.UTORRENT_SEED_TIME "0" }}
