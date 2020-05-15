@@ -20,7 +20,7 @@ curl -sL "${DOCKERIZE_IMAGE_URL}" 2> /dev/null | tar -C /usr/local/bin -xz
 # Installing uTorrent
 echo "**** install utorrent ****"
 curl -sSL "${UTSERVER_URL}" -o utserver.tar.gz
-tar xvf utserver.tar.gz --strip 1 -C /utorrent
+tar xf utserver.tar.gz --strip 1 -C /utorrent
 mv /utorrent/webui.zip /utorrent/webui/default/
 
 echo "**** install custom UI ****"
