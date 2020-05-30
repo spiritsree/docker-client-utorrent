@@ -25,6 +25,7 @@ ADD ./app/scripts /usr/local/scripts
 ENV HEALTH_CHECK_HOST=www.google.com \
     ENABLE_FILE_LOGGING=true \
     LOG_FILE=/data/application.log \
+    UTORRENT_START_DELAY= \
     UTORRENT_RUNAS_ROOT=false \
     UTORRENT_SETTING_DEFAULT=false \
     UTORRENT_WATCH_DIR=/data/watch \
