@@ -64,6 +64,11 @@ fi
 
 dockerize -template "/etc/config/utserver.conf.tmpl:${UTORRENT_HOME}/utserver.conf"
 
+if [[ "${UTORRENT_START_DELAY-}" =~ ^[0-9]+$ ]]; then
+    echo "[UTORRENT] Delaying the startup by ${UTORRENT_START_DELAY}..." >> ${LOG_FILE}
+    sleep "${UTORRENT_START_DELAY}"
+fi
+
 echo "[UTORRENT] uTorrent will run as \"${UTORRENT_USER}\" with UID \"${UTORRENT_UID}\" and GID \"${UTORRENT_GID}\"" >> ${LOG_FILE}
 exec su -p "${UTORRENT_USER}" -s /bin/bash -c "/utorrent/utserver -settingspath ${UTORRENT_HOME}/settings -configfile ${UTORRENT_HOME}/utserver.conf -logfile ${LOG_FILE}"
 

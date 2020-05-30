@@ -23,6 +23,7 @@ Variable | Description | Default |
 `UTORRENT_HOME` | uTorrent Home | `/data/utorrent-home` |
 `UTORRENT_LOGMASK` | Mask to allow generating certain categories of log message | `0` |
 `UTORRENT_FINISH_CMD` | command that will be executed upon completion of each torrent |  |
+`UTORRENT_START_DELAY` | Startup delay in seconds | |
 
 **Directories**
 
